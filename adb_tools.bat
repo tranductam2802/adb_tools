@@ -68,8 +68,8 @@ set SCRIPT_WAIT_UNTIL_DONE=%SCRIPT_BASE_PATH%wait_until_done.bat
 rem Note: If you change the path, add \ to the end
 
 rem Define default adb command
-set ADB_VERSION=adb version
-set ADB_TARGET=adb %TARGET_DEVICE% %TARGET_DEVICE_SERIAL%
+set ADB_VERSION=%SCRIPT_BASE_PATH%adb.exe version
+set ADB_TARGET=%SCRIPT_BASE_PATH%adb.exe %TARGET_DEVICE% %TARGET_DEVICE_SERIAL%
 set ADB_KILL_SERVER=%ADB_TARGET% kill-server
 set ADB_START_SERVER=%ADB_TARGET% start-server
 set ADB_PULL=%ADB_TARGET% pull
